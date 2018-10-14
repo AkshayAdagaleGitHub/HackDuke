@@ -245,7 +245,7 @@ var requestLoop = setInterval(function(){
           console.log('error' + response.statusCode);
       }
   });
-}, 5000);
+}, 30000);
 
 
 function sendData(toNumber,message) {
