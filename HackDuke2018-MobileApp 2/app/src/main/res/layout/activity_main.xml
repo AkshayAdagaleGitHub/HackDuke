@@ -6,7 +6,7 @@
     android:id="@+id/textViewLastName"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/androidimage8"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,91 +18,117 @@
         android:layout_marginTop="17dp"
         android:text="Work Request"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="83dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Name"
         android:inputType="text"
-        android:textColor="@android:color/white" />
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
 
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="146dp"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Number"
-        android:inputType="number" />
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editTextZip"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignStart="@+id/editTextSkill"
+        android:layout_below="@+id/editTextSkill"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Zipcode"
-        android:inputType="number" />
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editTextSkill"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="211dp"
+        android:layout_alignStart="@+id/editTextNumber"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Skills"
-        android:inputType="text" />
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="20sp" />
 
 
     <EditText
         android:id="@+id/editTextJob"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="141dp"
+        android:layout_alignStart="@+id/editTextRegion1"
+        android:layout_alignTop="@+id/editTextRegion1"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Job"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textSize="20sp" />
 
 
     <EditText
         android:id="@+id/editTextRegion1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
+        android:layout_alignStart="@+id/editTextZip"
+        android:layout_below="@+id/editTextZip"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Region"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonCreate"
         android:layout_width="133dp"
         android:layout_height="wrap_content"
+
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-
-        android:layout_marginBottom="46dp"
-        android:text="Save" />
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp" />
 </RelativeLayout>
