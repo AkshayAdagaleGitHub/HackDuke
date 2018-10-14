@@ -10,6 +10,9 @@ module.exports = function(app) {
   app.route('/register_workrequest_mobile')
     .post(WorkRequestHandlers.register_workrequest_mobile);
 
+  // app.route('/register_workrequest_fb')
+  //   .post(WorkRequestHandlers.register_workrequest_fb);
+
 //   app.route('/create_admin')
 //       .post(AdminHandlers.create_admin);
 //
