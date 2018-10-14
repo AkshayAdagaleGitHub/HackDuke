@@ -13,21 +13,21 @@ function AppViewModel() {
  
 self.saveWorkRequest = function (params) {
 
-    alert('calling ajax');
+   // alert('calling ajax');
     $.ajax({
         method: "POST",
         contentType: 'application/x-www-form-urlencoded',
-        data: JSON.stringify({
+        data: {
             Name: self.Name(),
-            from: self.Number(),
+            from: "+1"+self.Number(),
             zip:self.Zip(),
             region: self.Region(),
             job:self.Job(),
-            skill: self.Skill()}),
+            skill: self.Skill()},
             url: self.urlIP()+"/register_workrequest_mobile",
            
             success: function(result) {
-                alert('done');
+              //  alert('done');
                 //Write your code here
                 
                 //self.token(result.token);
@@ -39,7 +39,7 @@ self.saveWorkRequest = function (params) {
             error:
             function(result) {
                 //Write your code here
-                alert('error');
+             //   alert('error');
                 $.toast({heading:'error',text:result,icon:'error'});
                 }
         
