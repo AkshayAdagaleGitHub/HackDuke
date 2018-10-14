@@ -153,30 +153,30 @@ exports.register_workrequest_mobile = function(req, res) {
 
 
 
-var requestLoop = setInterval(function(){
-  request({
-      url: "https://graph.facebook.com/v2.9/EasyConnectDuke/posts?access_token=EAAgu8PurRGYBAJaIey7ICaIJ0rsU7XBZB6QlZAyVNAG4NHBIJLn2iIu86bGtoj0eizpS9TymNY9z20A8w1hCs6XDbcDa0aSXTqk9w9atZByeAIT9rZC7e0lKv4KEIbGHZAzwnqzffn4dCuuZB2iVPx8RQZB4GKega5GVOoNOsPj7GJWd1ctebxE2AmS43i0yg22ZAZAZBi94rkE6nHIExKOqxbhUMxkqV9RhYVvkDHZB6WZANAZDZD",
-      method: "GET",
-      timeout: 100000,
-      followRedirect: true,
-      maxRedirects: 10
-  },function(error, response, body){
-      if(!error && response.statusCode == 200){
-          console.log('sucess!');
-          //var data = JSON.parse(response.body[0]);
-          console.log(response.body[0]);
-
-          // JSONObject json = new JSONObject(data);
-          // String statistics = json.getString("");
-          // JSONObject name1 = json.getJSONObject("data");
-          // //String ageJohn = name1.getString("Age");
-          // console.log(name1);
-
-      }else{
-          console.log('error' + response.statusCode);
-      }
-  });
-}, 5000);
+// var requestLoop = setInterval(function(){
+//   request({
+//       url: "https://graph.facebook.com/v2.9/EasyConnectDuke/posts?access_token=EAAgu8PurRGYBAJaIey7ICaIJ0rsU7XBZB6QlZAyVNAG4NHBIJLn2iIu86bGtoj0eizpS9TymNY9z20A8w1hCs6XDbcDa0aSXTqk9w9atZByeAIT9rZC7e0lKv4KEIbGHZAzwnqzffn4dCuuZB2iVPx8RQZB4GKega5GVOoNOsPj7GJWd1ctebxE2AmS43i0yg22ZAZAZBi94rkE6nHIExKOqxbhUMxkqV9RhYVvkDHZB6WZANAZDZD",
+//       method: "GET",
+//       timeout: 100000,
+//       followRedirect: true,
+//       maxRedirects: 10
+//   },function(error, response, body){
+//       if(!error && response.statusCode == 200){
+//           console.log('sucess!');
+//           //var data = JSON.parse(response.body[0]);
+//           console.log(response.body[0]);
+//
+//           // JSONObject json = new JSONObject(data);
+//           // String statistics = json.getString("");
+//           // JSONObject name1 = json.getJSONObject("data");
+//           // //String ageJohn = name1.getString("Age");
+//           // console.log(name1);
+//
+//       }else{
+//           console.log('error' + response.statusCode);
+//       }
+//   });
+// }, 5000);
 
 
 function sendData(toNumber,message) {
