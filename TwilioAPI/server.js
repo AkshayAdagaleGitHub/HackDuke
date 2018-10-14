@@ -38,6 +38,27 @@ app.use(function (req, res, next) {
     next();
 });
 
+
+
+app.get('/index.html',function(req,res){
+ res.sendFile(__dirname+'/WebApp/index.html');
+ //__dirname : It will resolve to your project folder.
+});
+
+
+app.use((req, res, next) => {
+ res.header("Access-Control-Allow-Origin", "*");
+ res.header(
+   "Access-Control-Allow-Headers",
+   "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+ );
+ if (req.method === "OPTIONS") {
+   res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+   return res.status(200).json({});
+ }
+ next();
+});
+
 var routes = require('./Routes/routes'); //importing route
   routes(app); //register the route
 
