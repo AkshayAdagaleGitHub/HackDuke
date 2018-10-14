@@ -1,6 +1,7 @@
 package com.example.akshay.hackduke2018;
 
 import android.content.Intent;
+import android.R.*;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Debug;
