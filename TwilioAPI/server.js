@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const jsonwebtoken = require("jsonwebtoken");
 const handyman = require('./model/Handymanmodel');
-const workrequest = require('./model/WorkRequestmodel');
+const workrequest = require('./model/WorkRequestModel');
 const app = express();
 
 //var Task = mongoose.model('inclass03');
