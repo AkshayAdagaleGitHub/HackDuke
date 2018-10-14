@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
     TextView title;
     int length=0,lenghtRegion=0,lengthJob=0;
     Boolean checked = false;
-    private String remoteIP="http://c3ee4bf3.ngrok.io";
+    private String remoteIP="http://" +
+            "13.58.41.200:1337";
     Toolbar mTopToolbar;
 
 
