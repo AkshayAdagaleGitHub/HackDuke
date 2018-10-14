@@ -6,8 +6,8 @@
     android:id="@+id/textViewLastName"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/androidimage8">
+    android:background="@drawable/androidimage8"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
@@ -24,21 +24,21 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="83dp"
         android:ems="10"
-        android:hint="Email"
         android:gravity="center_horizontal"
-        android:inputType="textEmailAddress"
+        android:hint="Name"
+        android:inputType="text"
         android:textColor="@android:color/white" />
 
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -46,23 +46,21 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Number"
-        android:inputType="number"
-        android:visibility="invisible" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/editTextZip"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Zipcode"
-        android:inputType="number"
-        android:visibility="invisible" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/editTextSkill"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -70,13 +68,12 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Skills"
-        android:inputType="text"
-        android:visibility="invisible" />
+        android:inputType="text" />
 
 
     <EditText
         android:id="@+id/editTextJob"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -84,13 +81,12 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Job"
-        android:inputType="textMultiLine"
-        android:visibility="invisible" />
+        android:inputType="textMultiLine" />
 
 
     <EditText
         android:id="@+id/editTextRegion1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -98,8 +94,7 @@
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Region"
-        android:inputType="textPersonName"
-        android:visibility="invisible" />
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/buttonCreate"
@@ -109,6 +104,5 @@
         android:layout_centerHorizontal="true"
 
         android:layout_marginBottom="46dp"
-        android:text="Save"
-        android:visibility="invisible" />
+        android:text="Save" />
 </RelativeLayout>
